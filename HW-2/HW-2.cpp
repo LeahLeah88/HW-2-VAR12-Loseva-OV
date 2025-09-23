@@ -1,22 +1,23 @@
 ﻿#include <iostream>
 
-int Swap(int a)
+int swap(int number)
 {
-	if (a > 9 && a < 100)
+	if (number > 9 && number < 100)
 	{
-		int c1;
-		int c2;
-		c1 = a / 10;
-		c2 = a % 10;
-		return c2 * 10 + c1;
+		int figure1;
+		int figure2;
+		figure1 = number / 10;
+		figure2 = number % 10;
+		return figure2 * 10 + figure1;
 	}
 	else
-		return a;
+		return number;
 }
 
 int main()
 {
-	int c;
-	std::cout << "c = ";
-	std::cin >> c;
-	std::cout << Swap(c);
+	int number;
+	std::cout << "number = ";
+	std::cin >> number;
+
+	std::cout << Swap(number);
